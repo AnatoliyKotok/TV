@@ -3,16 +3,17 @@
 using namespace std;
 
 int main() {
-	TV tv1{23,12 };
-	Remote rem1;
-	rem1.setPover(tv1, TV::Pover::ON);
-	tv1.print();
-	TV tv2{ 32,34 };
-	rem1.setPover(tv2, TV::Pover::ON);
-	//rem1.nextChenel(tv2);
-	rem1.prevChenel(tv2);
-	//rem1.incVolume(tv2, 18);
-	rem1.decVolume(tv2, 30);
-	rem1.foundByChenel(tv2, 55);
-    tv2.print();
+	TV tv;
+	Radio radio;
+	Remote remote(&tv);
+	remote.setPover(Item::Pover::ON);
+	remote.setNumber(11);
+	remote.nextChenel();
+	remote.setSound(34);
+	remote.print();
+	Remote remote2(&radio);
+	remote2.setPover(Item::Pover::ON);
+	remote2.setNumber(34);
+	remote2.setSound(43);
+	remote2.print();
 }

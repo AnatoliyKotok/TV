@@ -1,2 +1,4 @@
 ﻿  Source.cpp
-  TV.vcxproj -> C:\Users\Anatoliy\source\repos\TV\Debug\TV.exe
+C:\Users\Anatoliy\Desktop\TV\TV\TV.h(42,28): warning C4018: '<=': signed/unsigned mismatch
+C:\Users\Anatoliy\Desktop\TV\TV\TV.h(51,26): warning C4018: '<=': signed/unsigned mismatch
+  TV.vcxproj -> C:\Users\Anatoliy\Desktop\TV\Debug\TV.exe
